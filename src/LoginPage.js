@@ -12,7 +12,7 @@ function LoginPage({ onLoginSuccess }) {
       dispatch({ type: "LOGIN", payload: { id} });
       onLoginSuccess(); // 로그인 성공 시 부모 컴포넌트에 알림
     } else {
-      alert("아이디 입력하세요."); // 아이디와 비밀번호가 입력되지 않았을 때 경고
+      alert("아이디 입력하세요."); // 아이디와 입력되지 않았을 때 경고
     }
   };
 

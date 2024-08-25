@@ -13,7 +13,7 @@ let initialState ={
 }
 
 
-// const  calculatorReducer =(state = initialState, action)=> {
+
     const  reducer =(state = initialState, action)=> {
     switch (action.type) {
 
@@ -39,7 +39,7 @@ let initialState ={
         return {
             ...state,
                 count:
-            // displayValue:
+
             state.waitingForNewValue
                 ? action.payload
                 :state.count === '0'
@@ -80,7 +80,7 @@ let initialState ={
                 };
         case 'EVALUATE':
         const current = parseFloat(state.count);
-        // const current = parseFloat(state.displayValue);
+
         const previous = parseFloat(state.previousValue);
         let result = 0;
         switch (state.operator) {
